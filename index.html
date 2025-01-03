@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic MCQ Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-white-abstract-motion-graphics-5054-large.mp4" type="video/mp4">
+    </video>
+    
+    <div class="quiz-container">
+        <h1>Dynamic MCQ Quiz</h1>
+
+        <!-- Difficulty Selection Screen -->
+        <div class="difficulty-selection" id="difficulty-selection">
+            <h3>Select Difficulty Level</h3>
+            <button onclick="startQuiz('easy')">Easy</button>
+            <button onclick="startQuiz('medium')">Medium</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+        </div>
+
+        <div id="question-container"></div>
+        <button id="next-btn" onclick="loadNextQuestion()" style="display: none;">Next</button>
+        <div id="result" style="display: none;">
+            <h2>Your Score: <span id="score"></span>/<span id="total-questions"></span></h2>
+        </div>
+    </div>
+
+    <div class="timer" id="timer"></div>
+    <div id="progress-container" style="width: 100%; background-color: #f3f3f3; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 10px; display: none;">
+        <div id="progress-bar" style="height: 100%; background-color: #4caf50; width: 100%; transition: width 1s ease;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
