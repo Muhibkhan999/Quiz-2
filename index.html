@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic MCQ Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="Intro.css">
 </head>
 <body>
-    <video autoplay muted loop id="background-video">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-white-abstract-motion-graphics-5054-large.mp4" type="video/mp4">
-    </video>
-    
-    <div class="quiz-container">
-        <h1>Dynamic MCQ Quiz</h1>
-
-        <!-- Difficulty Selection Screen -->
-        <div class="difficulty-selection" id="difficulty-selection">
-            <h3>Select Difficulty Level</h3>
-            <button onclick="startQuiz('easy')">Easy</button>
-            <button onclick="startQuiz('medium')">Medium</button>
-            <button onclick="startQuiz('hard')">Hard</button>
-        </div>
-
-        <div id="question-container"></div>
-        <button id="next-btn" onclick="loadNextQuestion()" style="display: none;">Next</button>
-        <div id="result" style="display: none;">
-            <h2>Your Score: <span id="score"></span>/<span id="total-questions"></span></h2>
-        </div>
+    <div class="intro-container">
+        <h1>Welcome to the JavaScript Quiz</h1>
+        <p>
+            JavaScript is a powerful programming language that enables dynamic and interactive content on websites. 
+            It's widely used for web development and allows developers to create responsive web applications. 
+            Through this quiz, you will test your knowledge of JavaScript fundamentals and key concepts.
+        </p>
+        <h2>About the Developer</h2>
+        <p>
+            Hi! I'm a passionate JavaScript developer who created this quiz to help others learn and test their JavaScript knowledge.
+            With over several years of experience in web development, I've designed this quiz to cover essential concepts that every
+            JavaScript developer should know.
+        </p>
+        <h2>Why Take This Quiz?</h2>
+        <p>
+            This quiz is carefully crafted to test your understanding of:
+            • JavaScript fundamentals
+            • ES6+ features
+            • DOM manipulation
+            • Object-oriented concepts
+            • Common programming patterns
+        </p>
+        <h2>How It Works</h2>
+        <p>
+            The quiz consists of multiple-choice questions covering various aspects of JavaScript. Each question is designed
+            to test a specific concept or feature. In this quiz you will be having a time limit of 3 minute. In total you will be facing 30 questions. You'll receive immediate feedback on your answers and a final score at the end.
+        </p>
+        <h2>Tips for Success</h2>
+        <p>
+             Read each question carefully
+            • Take your time to understand the code examples
+            • Review your answers before submitting
+            • Don't get discouraged if you don't know everything
+            • Use this as a learning opportunity
+        </p>
+        <h2>Ready to Begin?</h2>
+        <p>
+            Test your JavaScript knowledge and discover areas where you can improve. Good luck!
+        </p>
+        <button id="start-btn" onclick="window.location.href='index.html'">Start Quiz</button>
     </div>
 
-    <div class="timer" id="timer"></div>
-    <div id="progress-container" style="width: 100%; background-color: #f3f3f3; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 10px; display: none;">
-        <div id="progress-bar" style="height: 100%; background-color: #4caf50; width: 100%; transition: width 1s ease;"></div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
